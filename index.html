@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gaming</title>
+    <script type="module" crossorigin src="/assets/index-C46_clLQ.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-BZeWFZtF.css">
+  </head>
+  <body class="font-main-font bg-black">
+    <header
+      class="header-col pt-6 md:pt-8 absolute top-0 left-0 right-0 z-20 w-full overflow-hidden"
+    >
+      <div class="container relative">
+        <img
+          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAXQAAAAkCAYAAACZmsEQAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAydpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDkuMC1jMDAxIDc5LjE0ZWNiNDJmMmMsIDIwMjMvMDEvMTMtMTI6MjU6NDQgICAgICAgICI+IDxyZGY6UkRGIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyI+IDxyZGY6RGVzY3JpcHRpb24gcmRmOmFib3V0PSIiIHhtbG5zOnhtcD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLyIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bXA6Q3JlYXRvclRvb2w9IkFkb2JlIFBob3Rvc2hvcCAyNC4yIChXaW5kb3dzKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDpDRUY3RDE5RDNDRjkxMUVGQjIwMkE4M0YxNDExNUM3NiIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDpDRUY3RDE5RTNDRjkxMUVGQjIwMkE4M0YxNDExNUM3NiI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkNFRjdEMTlCM0NGOTExRUZCMjAyQTgzRjE0MTE1Qzc2IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOkNFRjdEMTlDM0NGOTExRUZCMjAyQTgzRjE0MTE1Qzc2Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+WAV9aQAAB+ZJREFUeNrs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"
+          alt=""
+          class="hidden md:block absolute bottom-0 -left-[315px] bg-no-repeat bg-cover w-[315px] h-[30px]"
+        />
+        <!-- <div class="flex justify-between items-center"> -->
+        <div class="grid md:grid-cols-3 grid-cols-2 gap-2 md:gap-4">
+          <div class="top-social hidden md:block">
+            <ul>
+              <li>
+                <a href="#"
+                  ><span class="relative"></span
+                  ><img src="data:image/svg+xml,%3csvg%20width='22'%20height='21'%20viewBox='0%200%2022%2021'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M17.3263%200.903809H20.6998L13.3297%209.3273L22%2020.7898H15.2112L9.89404%2013.8378L3.80995%2020.7898H0.434432L8.31743%2011.7799L0%200.903809H6.96111L11.7674%207.25814L17.3263%200.903809ZM16.1423%2018.7706H18.0116L5.94539%202.81694H3.93946L16.1423%2018.7706Z'%20fill='%23F4C625'/%3e%3c/svg%3e" alt="Twitter"
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><span></span><img src="data:image/svg+xml,%3csvg%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20filter='url(%23filter0_d_1_257)'%3e%3cpath%20d='M22.5083%2020.4343L18.254%2010.0792C18.1754%209.88801%2018.0421%209.72452%2017.871%209.60948C17.6999%209.49444%2017.4986%209.43303%2017.2927%209.43303C17.0869%209.43303%2016.8856%209.49444%2016.7145%209.60948C16.5434%209.72452%2016.4101%209.88801%2016.3315%2010.0792L12.0772%2020.4343C12.0243%2020.5613%2011.9969%2020.6976%2011.9965%2020.8352C11.9962%2020.9729%2012.0229%2021.1093%2012.0752%2021.2365C12.1274%2021.3638%2012.2042%2021.4794%2012.3011%2021.5768C12.3979%2021.6741%2012.513%2021.7513%2012.6396%2021.8038C12.7663%2021.8563%2012.902%2021.8832%2013.039%2021.8829C13.176%2021.8825%2013.3115%2021.855%2013.4379%2021.8019C13.5643%2021.7487%2013.679%2021.671%2013.7754%2021.5732C13.8718%2021.4754%2013.948%2021.3594%2013.9997%2021.2319L14.8661%2019.1233H19.7194L20.5858%2021.2319C20.6644%2021.4232%2020.7977%2021.5868%2020.9689%2021.7019C21.14%2021.8169%2021.3413%2021.8784%2021.5473%2021.8783C21.7182%2021.8782%2021.8864%2021.8358%2022.0371%2021.7548C22.1878%2021.6739%2022.3163%2021.5568%2022.4113%2021.4141C22.5062%2021.2713%2022.5647%2021.1072%2022.5816%2020.9363C22.5984%2020.7655%2022.5731%2020.593%2022.5078%2020.4343H22.5083ZM15.725%2017.0333L17.293%2013.2166L18.8609%2017.0333H15.725ZM12.5584%2016.127C12.7199%2015.9027%2012.7863%2015.6232%2012.743%2015.3498C12.6997%2015.0764%2012.5501%2014.8315%2012.3272%2014.6687C12.3178%2014.6616%2011.6182%2014.1401%2010.6023%2013.019C12.4766%2010.4692%2013.5383%207.56836%2013.9713%206.2032H15.4967C15.7725%206.2032%2016.037%206.0931%2016.2321%205.89713C16.4271%205.70115%2016.5367%205.43535%2016.5367%205.15819C16.5367%204.88104%2016.4271%204.61524%2016.2321%204.41926C16.037%204.22328%2015.7725%204.11318%2015.4967%204.11318H10.0134V3.16317C10.0134%202.88602%209.90379%202.62022%209.70876%202.42424C9.51373%202.22826%209.24922%202.11816%208.9734%202.11816C8.69759%202.11816%208.43308%202.22826%208.23805%202.42424C8.04302%202.62022%207.93346%202.88602%207.93346%203.16317V4.11318H2.4501C2.17429%204.11318%201.90978%204.22328%201.71475%204.41926C1.51972%204.61524%201.41016%204.88104%201.41016%205.15819C1.41016%205.43535%201.51972%205.70115%201.71475%205.89713C1.90978%206.0931%202.17429%206.2032%202.4501%206.2032H11.7742C11.3242%207.48334%2010.4955%209.50448%209.2315%2011.3504C7.74674%209.37053%207.1951%208.08945%207.19084%208.07899C7.08214%207.82657%206.8788%207.62739%206.6249%207.52464C6.37101%207.42189%206.08704%207.42387%205.83459%207.53015C5.58214%207.63642%205.38156%207.83842%205.27636%208.09233C5.17115%208.34625%205.16981%208.6316%205.27261%208.8865C5.30003%208.95205%205.9604%2010.5124%207.77132%2012.8732C7.81481%2012.9297%207.85783%2012.9848%207.90084%2013.0399C6.04595%2015.1466%204.22605%2016.4533%203.46452%2016.8751C3.22237%2017.0078%203.04261%2017.2318%202.96478%2017.4977C2.88694%2017.7636%202.91741%2018.0497%203.04949%2018.293C3.18157%2018.5363%203.40443%2018.717%203.66904%2018.7952C3.93366%2018.8734%204.21836%2018.8428%204.46051%2018.7101C4.56261%2018.654%206.75785%2017.4328%209.26459%2014.6445C10.3291%2015.7883%2011.0609%2016.3279%2011.1048%2016.3593C11.2154%2016.44%2011.3408%2016.498%2011.4737%2016.53C11.6067%2016.562%2011.7446%2016.5674%2011.8796%2016.5458C12.0146%2016.5241%2012.1441%2016.476%2012.2605%2016.404C12.377%2016.3321%2012.4782%2016.2378%2012.5584%2016.1265V16.127Z'%20fill='%23F4C625'/%3e%3c/g%3e%3cdefs%3e%3cfilter%20id='filter0_d_1_257'%20x='-6.58984'%20y='-5.88184'%20width='37.1765'%20height='35.7646'%20filterUnits='userSpaceOnUse'%20color-interpolation-filters='sRGB'%3e%3cfeFlood%20flood-opacity='0'%20result='BackgroundImageFix'/%3e%3cfeColorMatrix%20in='SourceAlpha'%20type='matrix'%20values='0%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%20127%200'%20result='hardAlpha'/%3e%3cfeOffset/%3e%3cfeGaussianBlur%20stdDeviation='4'/%3e%3cfeComposite%20in2='hardAlpha'%20operator='out'/%3e%3cfeColorMatrix%20type='matrix'%20values='0%200%200%200%201%200%200%200%200%200.721569%200%200%200%200%200%200%200%200%200.2%200'/%3e%3cfeBlend%20mode='normal'%20in2='BackgroundImageFix'%20result='effect1_dropShadow_1_257'/%3e%3cfeBlend%20mode='normal'%20in='SourceGraphic'%20in2='effect1_dropShadow_1_257'%20result='shape'/%3e%3c/filter%3e%3c/defs%3e%3c/svg%3e" alt="icon"
+                /></a>
+              </li>
+            </ul>
+          </div>
+          <div class="md:text-center">
+            <a
+              href="#"
+              class="text-primary text-2xl md:text-4xl font-title-font"
+              >Gaming Mania</a
+            >
+          </div>
+          <div class="">
+            <div class="topRrtlbtn flex gap-3 md:gap-5 float-end">
+              <div
+                class="Pre-order bg-primary w-24 h-[30px] md:w-[136px] md:h-[41px]"
+              >
+                <a
+                  href="#"
+                  class="bg-secondary text-center text-sm md:text-base font-title-font text-primary w-[94px] h-7 md:w-[134px] md:h-[39px] relative left-[1px] top-[1px] inline-block leading-[30px] md:leading-[39px]"
+                  ><span class="absolute top-0 left-0 hidden md:block"
+                    ><img src="data:image/svg+xml,%3csvg%20width='51'%20height='17'%20viewBox='0%200%2051%2017'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20filter='url(%23filter0_d_1_266)'%3e%3cpath%20d='M47.8457%203.18945H7.65571L3.19017%207.65499V13.0774'%20stroke='%23F4C625'%20stroke-linecap='square'/%3e%3c/g%3e%3cdefs%3e%3cfilter%20id='filter0_d_1_266'%20x='0.138418'%20y='0.137717'%20width='50.759'%20height='15.9917'%20filterUnits='userSpaceOnUse'%20color-interpolation-filters='sRGB'%3e%3cfeFlood%20flood-opacity='0'%20result='BackgroundImageFix'/%3e%3cfeColorMatrix%20in='SourceAlpha'%20type='matrix'%20values='0%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%20127%200'%20result='hardAlpha'/%3e%3cfeOffset/%3e%3cfeGaussianBlur%20stdDeviation='1.27587'/%3e%3cfeColorMatrix%20type='matrix'%20values='0%200%200%200%201%200%200%200%200%200.797961%200%200%200%200%200.278431%200%200%200%200.4%200'/%3e%3cfeBlend%20mode='normal'%20in2='BackgroundImageFix'%20result='effect1_dropShadow_1_266'/%3e%3cfeBlend%20mode='normal'%20in='SourceGraphic'%20in2='effect1_dropShadow_1_266'%20result='shape'/%3e%3c/filter%3e%3c/defs%3e%3c/svg%3e" /></span
+                  >Pre-order game<span
+                    class="absolute bottom-0 right-0 hidden md:block"
+                    ><img src="data:image/svg+xml,%3csvg%20width='75'%20height='22'%20viewBox='0%200%2075%2022'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20filter='url(%23filter0_d_1_267)'%3e%3cpath%20d='M71.4492%203.67236V9.0948L61.8802%2018.0259H3.19026'%20stroke='%23F4C625'%20stroke-linecap='square'/%3e%3c/g%3e%3cdefs%3e%3cfilter%20id='filter0_d_1_267'%20x='0.13851'%20y='0.620627'%20width='74.3624'%20height='20.457'%20filterUnits='userSpaceOnUse'%20color-interpolation-filters='sRGB'%3e%3cfeFlood%20flood-opacity='0'%20result='BackgroundImageFix'/%3e%3cfeColorMatrix%20in='SourceAlpha'%20type='matrix'%20values='0%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%20127%200'%20result='hardAlpha'/%3e%3cfeOffset/%3e%3cfeGaussianBlur%20stdDeviation='1.27587'/%3e%3cfeColorMatrix%20type='matrix'%20values='0%200%200%200%201%200%200%200%200%200.797961%200%200%200%200%200.278431%200%200%200%200.4%200'/%3e%3cfeBlend%20mode='normal'%20in2='BackgroundImageFix'%20result='effect1_dropShadow_1_267'/%3e%3cfeBlend%20mode='normal'%20in='SourceGraphic'%20in2='effect1_dropShadow_1_267'%20result='shape'/%3e%3c/filter%3e%3c/defs%3e%3c/svg%3e"
+                  /></span>
+                </a>
+              </div>
+              <div
+                class="buybtn bg-secondary w-24 h-[30px] md:w-[136px] md:h-[41px]"
+              >
+                <a
+                  href="#"
+                  class="bg-primary text-center text-sm md:text-base font-title-font text-secondary w-[94px] h-7 md:w-[134px] md:h-[39px] relative left-[1px] top-[1px] inline-block leading-[30px] md:leading-[39px] hover:opacity-95"
+                >
+                  Buy Bounty<span
+                    class="absolute bottom-0 right-0 hidden md:block"
+                    ><img src="data:image/svg+xml,%3csvg%20width='77'%20height='32'%20viewBox='0%200%2077%2032'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20filter='url(%23filter0_d_1_272)'%3e%3cpath%20d='M71.8358%204.5V13L55.1758%2027.5H5.19576'%20stroke='%23161616'%20stroke-linecap='square'/%3e%3c/g%3e%3cdefs%3e%3cfilter%20id='filter0_d_1_272'%20x='0.69574'%20y='0'%20width='75.64'%20height='32'%20filterUnits='userSpaceOnUse'%20color-interpolation-filters='sRGB'%3e%3cfeFlood%20flood-opacity='0'%20result='BackgroundImageFix'/%3e%3cfeColorMatrix%20in='SourceAlpha'%20type='matrix'%20values='0%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%20127%200'%20result='hardAlpha'/%3e%3cfeOffset/%3e%3cfeGaussianBlur%20stdDeviation='2'/%3e%3cfeColorMatrix%20type='matrix'%20values='0%200%200%200%200.116667%200%200%200%200%200.116667%200%200%200%200%200.116667%200%200%200%200.4%200'/%3e%3cfeBlend%20mode='normal'%20in2='BackgroundImageFix'%20result='effect1_dropShadow_1_272'/%3e%3cfeBlend%20mode='normal'%20in='SourceGraphic'%20in2='effect1_dropShadow_1_272'%20result='shape'/%3e%3c/filter%3e%3c/defs%3e%3c/svg%3e"
+                  /></span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <img
+          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAXMAAAAkCAYAAAB7RtppAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAydpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDkuMC1jMDAxIDc5LjE0ZWNiNDJmMmMsIDIwMjMvMDEvMTMtMTI6MjU6NDQgICAgICAgICI+IDxyZGY6UkRGIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyI+IDxyZGY6RGVzY3JpcHRpb24gcmRmOmFib3V0PSIiIHhtbG5zOnhtcD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLyIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bXA6Q3JlYXRvclRvb2w9IkFkb2JlIFBob3Rvc2hvcCAyNC4yIChXaW5kb3dzKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDpCNEY2MDkyRTNDRjkxMUVGQkRFRjkyNDk4N0I4RTgxMiIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDpCNEY2MDkyRjNDRjkxMUVGQkRFRjkyNDk4N0I4RTgxMiI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkI0RjYwOTJDM0NGOTExRUZCREVGOTI0OTg3QjhFODEyIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOkI0RjYwOTJEM0NGOTExRUZCREVGOTI0OTg3QjhFODEyIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+KdIjcwAACBhJREFUeNrsne9vFMcZx+eZ2bs9+3zGgSAViVQpdoyR4AX1qQ6QRn1TJeJF/tYqLyrRvEhVgVsoNBKh4SgYqZUgVRNawI65/TEzfebH/rgLVG3kVFn8/VhiZ2bnxzPP3H53b/f2gQQAwPPV1dOjBaU/IkEjlzfGkpSKt9rvd2khNOdd2u0XJJUURpuZfmK1gEsbSb4/UdULeW5pjU9rrqb8Hl2nOWV5FCls3R2PJ6ThvBTapash2BbNxijpegzl3Ktt0i7F/3o7OC0svdIJrX493I67tcF2bt+aPJshQnG7vetbtdq3xrLBjnpb+8LZZCq/uH3S15mxI9rVHs/Nh/3hx5RkK78Ky3mK7U2Yg09Y13drfjL04eYmZyYTttSqa9keijaHzwV5m43hUmnZBq7tm0ZPubVwnw9vXxgjDMnlsV/p7HFNOB9G5b54pPZimNiv31/5zLQ+b7Jes/+wqAAcIp5f3zgmi/JDUjRyAutlMR641cFUH2JOx1QQJX/AugO0EmovftxWN0JualWZPQaDRknSUcaD9isW8XhcyuZ8UBFE3NTCpXisStidmAc9FXNCWUvSt4Tai+a8INciFoVNt8pYbXhOsu7XJ6t9Qbi8wbaV9oZr0Qj47NkjDj4zr+bc4E9DtrbHyXQ8n7x0jnG9minXpzX3F+Q8tjOtNQk6HOyV/kTSiPnLhNx/Lvz0ea8T9GY2/lTUnPQE1X5pCbe3RMY1MGbuPMUju1Hjes2fM9unxMZf82dhAA4he9unzlmjLgUh1o8e/0tceefygwyeAV0igQvAYebp1VNjvhzbdJd2Vpe3h5d2rsErAGIOQEe4/+u19MSK+AV/633bfQEnI7dH79+/Dc+AroLbLODQ4R50Dqz+kCX8GJHIyMorw/fuPYZnAMQcgI7gHnQmWn9ghRiVxu7lQn18/L17u/AM6Dq4zQIOj5Bf/cnpntEXjDV9IenxP56L37xz+R4edAKIOQBd4enV02OSZtP96EyT+Hz5woNteAW8TuA2C3itcQ86f/SGuCCNXXcvXZDQ20sXH34OzwCIOQAdwT/oJP2Bf9BpTUZpeWU4/uuX8Ax4HVFwAXgdsXdOHqU8uUyCVviSZe+FVb9aeXfnCTwDcGUOQEeYXj+1bk1yobR2IIV49Pip/QRvdAKI+QHx7NOTa0mSHvGZnhBFmbTGLkQvIVuUlnp1Wc+XV5SloCRxkRW4nS2tz/fmn9+WrXRSl5HmNkncHbdW8WCUxNgLTbrduoy2CW6fKLKlCxpUipc+Ni40267IVmk/A87X6XqmnOb2pQ6+T8L3I1vl67K2vY0PROLbWgrteDxOl+3qSVNvtk2r/zheMue5JAm9lNMYw6NX9cHj8fqI1pqVPBPfvucWsxB6zn8qKb0vtFunOAnuWVTpWYe4bVw7Ut9ah6nbOvt5ncTcODNO4g0Z3TdCvu2DUZG6s3xxggedAGJ+EDy6eWJxNB1t8pF4XFUBeCgGF9JaKC50gYKUC04Tgw1pEw5oV1/r2eBAvr7W9T0iPmBJWW11K8JZO2idqPa7EupTvUdLUspYrUNwHRWD/FRR64JNOgYxqnpsttSKBtcOxBN9WgX+Iel6Frl1ytt43YXJKazfFwP2zEdTagclCnPmeioGcBLzAYta0d7qdq2wfd7nLT86/3KxYT9K52RnQxXJzkeD43wd4E8I0Y5sVKVdwKOqvW7sJ+5r1lP1LObsctPkNZAhSFITLCr4zkcMjJHz/BCurm9tuQ3b6CIZVuEJYzRAtib0x3mu9fulixM86AQQ84Pg+afrb8pUbkpRLLIEvJB9+4Urz7KU0jSzWRYEZsB/U/5LU/JlLh+ux+LXZpnWdg5MZsUCl2WubBqqDUT8Z9oavclTzuP1yboxiPuy3Icrc1VSZ0+rVZVPYz6bsl2DwfwX+WrQmbIs7/M40gtQlhuq+hN9FvO8X8/B9586P2S8P60Hy4rgj7THfij+94iWgzkLq7Isf3VfaSras2Wb2mVZy+B5D/13+TCPUJY2nbiRZube7KgMyF6xIqF1XgR/9tlXuRujH3flLP4LtDsc38WDTgAxPwiy7Y1zWpg1zVdqfMn31Wiwe4vGX+7D5QAA0AExd7dVjpaLW4URK/7KqU+3B+MHO3A1AAB8fxzoG6Df/O7MCf6a/NOCVF8Ks2/68tZg/Jev4WYAAOjAlfnNm5u9jf29Myaxq+7/SSFDf18YHLlF41sFXAwAAB0Q83BbZXnLmPKIsraYCjlZuYTbKgAA0Bkxn157a1WL3ob7xbcV8sWwn/+Bxg+fwa0AAPD/5TvdM3e3VdaKZ+dya3/sfpPNQr4z7A8nNJ7gtgoAAHThyvyfn5w6sjhSP9PCLgptygK3VQAAoFtX5tNra6taibO5ISIpny09+eY6fYTfjgMAQCeuzN1tlfUXu1tKmmPh7fDk4aQ/nIzxaxUAAOiGmLtX8vsL9jxfjQ+VKfN9k352/H28Kg0AAJ0R8+fb6xt8GX7aBzoq5JPRwu6f8Eo+AAD88HjpPXMf6bBYPK+I3nRB6RLV2xm+e/cO3AUAAB0Rc3t949j+NN/SRD2rzL7J5WfDS3fxSj4AAPyAmbnNkv3xzNksL1Zd/Gyy4usveks38JATAAA6IuZ2++TCHi1tWV0uu/vjhRF/xm/HAQCgQ2K+f2P1LZuLs5qSvlRmP9/VN47+Eq/kAwBAl5BW03mhqKdJ/22SLP8WQg4AAN0jKXNTWqkmb/z8/kO4AwAAOsqjj08swgsAANBt/i3AALCMqXdwEfLIAAAAAElFTkSuQmCC"
+          alt=""
+          class="hidden md:block absolute bottom-0 -right-[315px] bg-no-repeat bg-cover w-[315px] h-[30px]"
+        />
+      </div>
+    </header>
+    <section class="banner-col pt-32 md:pt-52 pb-28">
+      <div class="container">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-5 items-center">
+          <div class="max-w-md mb-6 lg:mb-0">
+            <div
+              class="text-[#F4C625CC] text-lg md:text-2xl font-title-font uppercase"
+            >
+              invest, hold, and reap 100% annual percentageyield
+            </div>
+            <h2
+              class="md:text-[52px] text-5xl font-title-font mt-3 md:mt-5 mb-8 text-white"
+            >
+              Lorem Ipsum Is dummy
+            </h2>
+
+            <div class="flex gap-4 md:gap-5 mb-8">
+              <img src="/assets/buy-back-B4wc0HGS.svg" alt="" />
+              <div class="">
+                <h3
+                  class="text-2xl font-title-font mt-0 mb-1 text-white opacity-80"
+                >
+                  Buy back & burn system
+                </h3>
+                <p
+                  class="text-base mb-0 text-white font-normal opacity-80 leading-5"
+                >
+                  Actively repurchases its own tokens, making them rarer and
+                  more valuable
+                </p>
+              </div>
+            </div>
+
+            <div class="flex gap-4 md:gap-5 mb-8">
+              <img src="data:image/svg+xml,%3csvg%20width='56'%20height='49'%20viewBox='0%200%2056%2049'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M8.0592%2022.9594C8.08883%2022.9594%208.10365%2022.9594%208.13327%2022.9594C8.42956%2022.9594%208.68141%2022.7372%208.72585%2022.4409C9.92581%2012.6058%2018.3107%205.19977%2028.2215%205.19977C33.3177%205.19977%2038.1471%207.14014%2041.8211%2010.6654C42.0581%2010.8876%2042.4285%2010.8876%2042.6655%2010.6506C42.8877%2010.4136%2042.8877%2010.0433%2042.6507%209.8063C38.7545%206.07368%2033.6288%204%2028.2215%204C17.7033%204%208.81473%2011.8652%207.5407%2022.278C7.49626%2022.6335%207.73329%2022.9297%208.0592%2022.9594Z'%20fill='%23F4C625'%20fill-opacity='0.8'/%3e%3cpath%20d='M48.4585%2025.2848C48.1326%2025.27%2047.8511%2025.5218%2047.8363%2025.8477C47.3178%2036.3049%2038.6958%2044.496%2028.2221%2044.496C22.5334%2044.496%2017.141%2042.0372%2013.4078%2037.7417C13.2004%2037.4899%2012.8152%2037.4751%2012.5781%2037.6825C12.3263%2037.9046%2012.3115%2038.2749%2012.5189%2038.5119C16.4743%2043.0592%2022.2075%2045.6661%2028.2369%2045.6661C39.3477%2045.6661%2048.4881%2036.9863%2049.0362%2025.8921C49.0362%2025.5811%2048.7844%2025.2996%2048.4585%2025.2848Z'%20fill='%23F4C625'%20fill-opacity='0.8'/%3e%3cpath%20d='M28.161%2037.1788C28.5758%2037.1788%2028.9017%2036.853%2028.9017%2036.4382V33.461C30.3831%2033.3425%2031.5535%2032.9574%2032.3831%2032.3205C33.4053%2031.5354%2033.9238%2030.4245%2033.9238%2028.9878C33.9238%2028.0991%2033.7608%2027.3733%2033.4201%2026.7808C33.0794%2026.1883%2032.5905%2025.6847%2031.9387%2025.2848C31.2868%2024.87%2030.4128%2024.4405%2029.2869%2023.9813C28.2795%2023.5666%2027.5092%2023.2259%2027.0055%2022.9445C26.487%2022.6631%2026.1018%2022.352%2025.85%2021.9965C25.5833%2021.641%2025.4648%2021.1967%2025.4648%2020.6783C25.4648%2019.9228%2025.7611%2019.3304%2026.3685%2018.9304C26.961%2018.5157%2027.8351%2018.3083%2028.9758%2018.3083C30.3831%2018.3083%2031.7757%2018.6194%2033.1386%2019.2267V17.1382C32.4423%2016.8271%2031.7312%2016.5901%2031.0053%2016.4568C30.3831%2016.3383%2029.6721%2016.2643%2028.9165%2016.2495V13.2574C28.9165%2012.8427%2028.5906%2012.5168%2028.1758%2012.5168C27.761%2012.5168%2027.4351%2012.8427%2027.4351%2013.2574V16.3235C26.7833%2016.4124%2026.1759%2016.5753%2025.6277%2016.8123C24.7685%2017.1826%2024.1167%2017.701%2023.6426%2018.3676C23.1686%2019.0341%2022.9315%2019.8043%2022.9315%2020.6783C22.9315%2021.8336%2023.2723%2022.7816%2023.9685%2023.537C24.6648%2024.2924%2025.7907%2024.9885%2027.361%2025.6255C28.5017%2026.0846%2029.3165%2026.4401%2029.8202%2026.7067C30.3239%2026.9734%2030.7091%2027.2696%2030.9757%2027.6251C31.2424%2027.9658%2031.3757%2028.4249%2031.3757%2029.0026C31.3757%2030.6615%2030.1461%2031.491%2027.6869%2031.491C25.9388%2031.491%2024.2944%2031.1355%2022.7834%2030.4246V32.6019C23.3611%2032.8833%2024.1167%2033.1055%2025.05%2033.2833C25.8351%2033.4314%2026.6351%2033.5055%2027.4351%2033.5203V36.4678C27.4203%2036.8529%2027.761%2037.1788%2028.161%2037.1788Z'%20fill='%23F4C625'%20fill-opacity='0.8'/%3e%3cpath%20d='M55.8362%2015.5237L47.9105%207.67336C47.7476%207.51043%2047.4809%207.45119%2047.2587%207.54006C47.0365%207.62893%2046.8883%207.85111%2046.8883%208.0881V12.5317H39.0516C38.7256%2012.5317%2038.459%2012.7983%2038.459%2013.1242V18.7527C38.459%2019.0786%2038.7256%2019.3452%2039.0516%2019.3452H46.8883V23.7888C46.8883%2024.0258%2047.0365%2024.248%2047.2587%2024.3369C47.3328%2024.3665%2047.4068%2024.3813%2047.4809%2024.3813C47.6291%2024.3813%2047.792%2024.3221%2047.8957%2024.2036L55.8214%2016.3532C55.9399%2016.2347%2055.9992%2016.0866%2055.9992%2015.9385C55.9992%2015.7903%2055.9399%2015.6274%2055.8362%2015.5237ZM48.0883%2022.3669V18.7527C48.0883%2018.4269%2047.8216%2018.1603%2047.4957%2018.1603H39.6589V13.7167H47.4957C47.8216%2013.7167%2048.0883%2013.45%2048.0883%2013.1242V9.51006L54.577%2015.9385L48.0883%2022.3669Z'%20fill='%23F4C625'%20fill-opacity='0.8'/%3e%3cpath%20d='M17.555%2035.9793V30.3507C17.555%2030.0249%2017.2883%2029.7583%2016.9624%2029.7583H9.12564V25.3147C9.12564%2025.0777%208.97749%2024.8555%208.75528%2024.7666C8.53306%2024.6777%208.28121%2024.7222%208.10344%2024.8999L0.177769%2032.7503C0.0592547%2032.8688%200%2033.0169%200%2033.165C0%2033.3131%200.0592547%2033.4761%200.177769%2033.5797L8.10344%2041.4301C8.22196%2041.5486%208.3701%2041.6078%208.51825%2041.6078C8.59232%2041.6078%208.66639%2041.593%208.74046%2041.5634C8.96268%2041.4745%209.11082%2041.2524%209.11082%2041.0154V36.5718H16.9476C17.2883%2036.5718%2017.555%2036.3052%2017.555%2035.9793ZM16.3698%2035.3868H8.53306C8.20715%2035.3868%207.94049%2035.6534%207.94049%2035.9793V39.5934L1.4518%2033.165L7.94049%2026.7366V30.3507C7.94049%2030.6766%208.20715%2030.9432%208.53306%2030.9432H16.3698V35.3868Z'%20fill='%23F4C625'%20fill-opacity='0.8'/%3e%3c/svg%3e" alt="" />
+              <div class="">
+                <h3
+                  class="text-2xl font-title-font mt-0 mb-1 text-white opacity-80"
+                >
+                  1st decentralized hedge fund
+                </h3>
+                <p
+                  class="text-base mb-0 text-white font-normal opacity-80 leading-5"
+                >
+                  100% autonomous, profits passively return to the Harambe AI
+                  community of holders.
+                </p>
+              </div>
+            </div>
+
+            <div class="flex gap-4 md:gap-5">
+              <img src="/assets/profit-IKklH46b.svg" alt="" />
+              <div class="">
+                <h3
+                  class="text-2xl font-title-font mt-0 mb-1 text-white opacity-80"
+                >
+                  30% more profitable than the market
+                </h3>
+                <p
+                  class="text-base mb-0 text-white font-normal opacity-80 leading-5"
+                >
+                  Our revolutionary AI trading bot is designed to outperform top
+                  crypto traders.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="box w-full bg-primary h-full">
+            <div
+              class="box-inner w-[99.666%] mx-auto bg-[#070808] h-[99.666%] relative top-[1px] left-[1px]- py-14 px-8"
+            >
+              <div class="max-w-96 mx-auto">
+                <div
+                  class="md:text-2xl text-xl font-title-font mb-3 text-center text-gradient"
+                >
+                  Price Increasing soon - buy now!
+                </div>
+
+                <div id="countdown">
+                  <ul>
+                    <li>
+                      <div class="countBox">
+                        <span
+                          class="md:text-2xl text-lg text-primary font-medium"
+                          id="days"
+                        ></span>
+                      </div>
+                      <p
+                        class="uppercase text-white opacity-60 text-base md:text-lg font-title-font"
+                      >
+                        Days
+                      </p>
+                    </li>
+                    <li>
+                      <div class="countBox">
+                        <span
+                          class="md:text-2xl text-lg text-primary font-medium"
+                          id="hours"
+                        ></span>
+                      </div>
+
+                      <p
+                        class="uppercase text-white opacity-60 text-base md:text-lg font-title-font"
+                      >
+                        HRS
+                      </p>
+                    </li>
+                    <li>
+                      <div class="countBox">
+                        <span
+                          class="md:text-2xl text-lg text-primary font-medium"
+                          id="minutes"
+                        ></span>
+                      </div>
+
+                      <p
+                        class="uppercase text-white opacity-60 text-base md:text-lg font-title-font"
+                      >
+                        Mins
+                      </p>
+                    </li>
+                    <li>
+                      <div class="countBox">
+                        <span
+                          class="md:text-2xl text-lg text-primary font-medium"
+                          id="seconds"
+                        ></span>
+                      </div>
+
+                      <p
+                        class="uppercase text-white opacity-60 text-base md:text-lg font-title-font"
+                      >
+                        Secs
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div
+                class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4 items-center justify-center"
+              >
+                <div class="md:col-span-2 bg-[#373737] rounded-full h-1.5">
+                  <div
+                    class="bg-gradient-to-r from-[#ffc700] to-[#ff8a00] h-1.5 rounded-full"
+                    style="width: 45%"
+                  ></div>
+                </div>
+
+                <div class="text-center md:text-left">
+                  <p class="text-sm text-offwhite m-0">
+                    USD Raised: $
+                    <span class="font-title-font text-gradient text-lg"
+                      >7,500,154</span
+                    >
+                  </p>
+                </div>
+              </div>
+
+              <div
+                class="grid grid-cols-3 gap-4 mt-4 items-center justify-center"
+              >
+                <p
+                  class="text-base text-offwhite font-title-font mt-0 mb-2 text-center"
+                >
+                  Current price
+                </p>
+                <p
+                  class="text-base text-offwhite font-title-font mt-0 mb-2 text-center"
+                >
+                  Next price
+                </p>
+                <p
+                  class="text-base text-offwhite font-title-font mt-0 mb-2 text-center"
+                >
+                  Listing price
+                </p>
+              </div>
+
+              <div class="price-tab-head">
+                <div class="price-tabInner">
+                  <div
+                    class="grid grid-cols-3 gap-4 mt-4 items-center justify-center h-full"
+                  >
+                    <p
+                      class="text-base md:text-lg text-offwhite font-title-font font-normal mt-0 mb-0 text-center"
+                    >
+                      $0.00277
+                      <span class="text-[#47A34B] ml-1"> (+11.8%)</span>
+                    </p>
+                    <p
+                      class="text-base md:text-lg text-offwhite font-title-font font-normal mt-0 mb-0 text-center"
+                    >
+                      $0.00277
+                      <span class="text-[#47A34B] ml-1"> (+11.8%)</span>
+                    </p>
+                    <p
+                      class="text-base md:text-lg text-offwhite font-title-font font-normal mt-0 mb-0 text-center"
+                    >
+                      $0.00277
+                      <span class="text-[#47A34B] ml-1"> (+11.8%)</span>
+                    </p>
+                  </div>
+                  <span class="absolute bottom-0 -right-[1px] hidden md:block"
+                    ><img src="data:image/svg+xml,%3csvg%20width='44'%20height='24'%20viewBox='0%200%2044%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20filter='url(%23filter0_d_1_372)'%3e%3cpath%20d='M39%205.21094V13.5L33.2985%2019.5H5.19101'%20stroke='%23F4C625'%20stroke-opacity='0.6'%20stroke-linecap='square'/%3e%3c/g%3e%3cdefs%3e%3cfilter%20id='filter0_d_1_372'%20x='0.69104'%20y='0.710938'%20width='42.809'%20height='23.2891'%20filterUnits='userSpaceOnUse'%20color-interpolation-filters='sRGB'%3e%3cfeFlood%20flood-opacity='0'%20result='BackgroundImageFix'/%3e%3cfeColorMatrix%20in='SourceAlpha'%20type='matrix'%20values='0%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%20127%200'%20result='hardAlpha'/%3e%3cfeOffset/%3e%3cfeGaussianBlur%20stdDeviation='2'/%3e%3cfeColorMatrix%20type='matrix'%20values='0%200%200%200%201%200%200%200%200%200.797961%200%200%200%200%200.278431%200%200%200%200.4%200'/%3e%3cfeBlend%20mode='normal'%20in2='BackgroundImageFix'%20result='effect1_dropShadow_1_372'/%3e%3cfeBlend%20mode='normal'%20in='SourceGraphic'%20in2='effect1_dropShadow_1_372'%20result='shape'/%3e%3c/filter%3e%3c/defs%3e%3c/svg%3e"
+                  /></span>
+                </div>
+              </div>
+
+              <div class="pay-form mt-4">
+                <div class="pay-form-inner py-1 px-3 relative">
+                  <div class="grid grid-cols-2 gap-5 items-center h-full">
+                    <div class="text-center first-price">
+                      <label class="text-offwhite text-base mb-1 block"
+                        >USD You Pay</label
+                      >
+                      <input
+                        type="text"
+                        placeholder="$0.00"
+                        class="text-2xl font-title-font text-white placeholder:text-gray-200"
+                      />
+                    </div>
+                    <div class="text-center">
+                      <label class="text-offwhite text-base block mb-1"
+                        >PremiumTokens</label
+                      >
+                      <div class="">
+                        <div class="text-center">
+                          <input
+                            type="text"
+                            placeholder="$0.00"
+                            class="text-2xl font-title-font text-white text-left placeholder:text-gray-200"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <img src="data:image/svg+xml,%3csvg%20width='28'%20height='29'%20viewBox='0%200%2028%2029'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3crect%20x='1'%20y='1.39331'%20width='26'%20height='26'%20rx='13'%20fill='url(%23paint0_linear_1_399)'/%3e%3crect%20x='1'%20y='1.39331'%20width='26'%20height='26'%20rx='13'%20fill='%23838383'%20fill-opacity='0.1'/%3e%3crect%20x='1'%20y='1.39331'%20width='26'%20height='26'%20rx='13'%20fill='white'%20fill-opacity='0.1'/%3e%3crect%20x='1'%20y='1.39331'%20width='26'%20height='26'%20rx='13'%20stroke='%23151515'%20stroke-width='2'/%3e%3cpath%20d='M11%2020.3933L8%2017.3933M8%2017.3933L11%2014.3933M8%2017.3933H17M17%208.39331L20%2011.3933M20%2011.3933L17%2014.3933M20%2011.3933L11%2011.3933'%20stroke='white'%20stroke-width='1.5'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3cdefs%3e%3clinearGradient%20id='paint0_linear_1_399'%20x1='3.78571'%20y1='0.813311'%20x2='13.5738'%20y2='31.9796'%20gradientUnits='userSpaceOnUse'%3e%3cstop%20stop-color='%23FFC700'/%3e%3cstop%20offset='1'%20stop-color='%23FF8A00'/%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e" alt="" class="tokens" />
+                </div>
+              </div>
+
+              <div class="flex items-center mb-4 mt-3">
+                <input
+                  id="default-checkbox"
+                  type="checkbox"
+                  value=""
+                  class="w-4 h-4 text-white bg-[#F4C62580] border-[#F4C62580] rounded focus:ring-[#F4C62580] focus:ring-0"
+                />
+                <label
+                  for="default-checkbox"
+                  class="ms-2 text-sm font-normal text-offwhite"
+                  >Pre-order game</label
+                >
+              </div>
+
+              <div class="text-center mb-5">
+                <p class="text-sm font-medium text-offwhite mt-0">
+                  <a href="#" class="text-primary hover:underline"
+                    >Need help?</a
+                  >
+                  Click here to read how to purchase
+                </p>
+              </div>
+
+              <div class="text-center mb-5">
+                <img src="/assets/secure-check-DZ0cJvDR.png" alt="" class="mx-auto" />
+              </div>
+              <div class="grid grid-cols-2 gap-3 mb-6">
+                <div class="btn-all">
+                  <a href="#" class="md:text-xl text-lg text-offwhite"
+                    ><span class="absolute top-0 left-0 hidden md:block"
+                      ><img src="data:image/svg+xml,%3csvg%20width='80'%20height='26'%20viewBox='0%200%2080%2026'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20filter='url(%23filter0_d_441_13)'%3e%3cpath%20d='M75%205.31592H11.9998L4.99977%2012.3159V20.8159'%20stroke='%23F4C625'%20stroke-linecap='square'/%3e%3c/g%3e%3cdefs%3e%3cfilter%20id='filter0_d_441_13'%20x='0.499771'%20y='0.815918'%20width='79.0002'%20height='24.5'%20filterUnits='userSpaceOnUse'%20color-interpolation-filters='sRGB'%3e%3cfeFlood%20flood-opacity='0'%20result='BackgroundImageFix'/%3e%3cfeColorMatrix%20in='SourceAlpha'%20type='matrix'%20values='0%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%20127%200'%20result='hardAlpha'/%3e%3cfeOffset/%3e%3cfeGaussianBlur%20stdDeviation='2'/%3e%3cfeColorMatrix%20type='matrix'%20values='0%200%200%200%201%200%200%200%200%200.797961%200%200%200%200%200.278431%200%200%200%200.4%200'/%3e%3cfeBlend%20mode='normal'%20in2='BackgroundImageFix'%20result='effect1_dropShadow_441_13'/%3e%3cfeBlend%20mode='normal'%20in='SourceGraphic'%20in2='effect1_dropShadow_441_13'%20result='shape'/%3e%3c/filter%3e%3c/defs%3e%3c/svg%3e" /></span
+                    >Whitepaper
+                    <span class="absolute bottom-0 right-0 hidden md:block"
+                      ><img src="data:image/svg+xml,%3csvg%20width='117'%20height='33'%20viewBox='0%200%20117%2033'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20filter='url(%23filter0_d_441_14)'%3e%3cpath%20d='M112%205.31592V13.8159L97%2027.8159H5'%20stroke='%23F4C625'%20stroke-linecap='square'/%3e%3c/g%3e%3cdefs%3e%3cfilter%20id='filter0_d_441_14'%20x='0.5'%20y='0.815918'%20width='116'%20height='31.5'%20filterUnits='userSpaceOnUse'%20color-interpolation-filters='sRGB'%3e%3cfeFlood%20flood-opacity='0'%20result='BackgroundImageFix'/%3e%3cfeColorMatrix%20in='SourceAlpha'%20type='matrix'%20values='0%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%20127%200'%20result='hardAlpha'/%3e%3cfeOffset/%3e%3cfeGaussianBlur%20stdDeviation='2'/%3e%3cfeColorMatrix%20type='matrix'%20values='0%200%200%200%201%200%200%200%200%200.797961%200%200%200%200%200.278431%200%200%200%200.4%200'/%3e%3cfeBlend%20mode='normal'%20in2='BackgroundImageFix'%20result='effect1_dropShadow_441_14'/%3e%3cfeBlend%20mode='normal'%20in='SourceGraphic'%20in2='effect1_dropShadow_441_14'%20result='shape'/%3e%3c/filter%3e%3c/defs%3e%3c/svg%3e" /></span
+                  ></a>
+                </div>
+                <div class="btn-all">
+                  <a href="#" class="md:text-xl text-lg text-offwhite"
+                    ><span class="absolute top-0 left-0 hidden md:block"
+                      ><img src="data:image/svg+xml,%3csvg%20width='80'%20height='26'%20viewBox='0%200%2080%2026'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20filter='url(%23filter0_d_441_13)'%3e%3cpath%20d='M75%205.31592H11.9998L4.99977%2012.3159V20.8159'%20stroke='%23F4C625'%20stroke-linecap='square'/%3e%3c/g%3e%3cdefs%3e%3cfilter%20id='filter0_d_441_13'%20x='0.499771'%20y='0.815918'%20width='79.0002'%20height='24.5'%20filterUnits='userSpaceOnUse'%20color-interpolation-filters='sRGB'%3e%3cfeFlood%20flood-opacity='0'%20result='BackgroundImageFix'/%3e%3cfeColorMatrix%20in='SourceAlpha'%20type='matrix'%20values='0%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%20127%200'%20result='hardAlpha'/%3e%3cfeOffset/%3e%3cfeGaussianBlur%20stdDeviation='2'/%3e%3cfeColorMatrix%20type='matrix'%20values='0%200%200%200%201%200%200%200%200%200.797961%200%200%200%200%200.278431%200%200%200%200.4%200'/%3e%3cfeBlend%20mode='normal'%20in2='BackgroundImageFix'%20result='effect1_dropShadow_441_13'/%3e%3cfeBlend%20mode='normal'%20in='SourceGraphic'%20in2='effect1_dropShadow_441_13'%20result='shape'/%3e%3c/filter%3e%3c/defs%3e%3c/svg%3e" /></span
+                    >Certick audit<span
+                      class="absolute bottom-0 right-0 hidden md:block"
+                      ><img src="data:image/svg+xml,%3csvg%20width='117'%20height='33'%20viewBox='0%200%20117%2033'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20filter='url(%23filter0_d_441_14)'%3e%3cpath%20d='M112%205.31592V13.8159L97%2027.8159H5'%20stroke='%23F4C625'%20stroke-linecap='square'/%3e%3c/g%3e%3cdefs%3e%3cfilter%20id='filter0_d_441_14'%20x='0.5'%20y='0.815918'%20width='116'%20height='31.5'%20filterUnits='userSpaceOnUse'%20color-interpolation-filters='sRGB'%3e%3cfeFlood%20flood-opacity='0'%20result='BackgroundImageFix'/%3e%3cfeColorMatrix%20in='SourceAlpha'%20type='matrix'%20values='0%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%20127%200'%20result='hardAlpha'/%3e%3cfeOffset/%3e%3cfeGaussianBlur%20stdDeviation='2'/%3e%3cfeColorMatrix%20type='matrix'%20values='0%200%200%200%201%200%200%200%200%200.797961%200%200%200%200%200.278431%200%200%200%200.4%200'/%3e%3cfeBlend%20mode='normal'%20in2='BackgroundImageFix'%20result='effect1_dropShadow_441_14'/%3e%3cfeBlend%20mode='normal'%20in='SourceGraphic'%20in2='effect1_dropShadow_441_14'%20result='shape'/%3e%3c/filter%3e%3c/defs%3e%3c/svg%3e" /></span
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="re-oder py-20 md:py-32">
+      <div class="container">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
+          <div class="order-left">
+            <img src="/assets/pre-AzyLVtkO.png" alt="" />
+          </div>
+          <div class="reorder-rtl md:pl-12">
+            <div class="">
+              <h2 class="text-black text-4xl md:text-7xl font-title-font mb-6">
+                Pre-order the game Bounty Hunter
+              </h2>
+              <div class="flex gap-2">
+                <div class="text-black font-title-font text-8xl md:text-9xl">
+                  $39
+                </div>
+                <div class="">
+                  <p
+                    class="md:text-5xl text-4xl text-black m-0 font-title-font"
+                  >
+                    (Save X%)
+                  </p>
+                  <p
+                    class="md:text-5xl text-4xl text-black m-0 font-title-font line-through"
+                  >
+                    $59
+                  </p>
+                </div>
+              </div>
+              <div class="select-box mt-2">
+                <form>
+                  <select
+                    id="countries"
+                    class="text-offwhite text-base h-11 md:h-[50px]"
+                  >
+                    <option selected>Select addons</option>
+                    <option value="US">United States</option>
+                    <option value="CA">Canada</option>
+                    <option value="FR">France</option>
+                    <option value="DE">Germany</option>
+                  </select>
+                </form>
+              </div>
+
+              <div>
+                <p class="text-base text-secondary font-normal mb-6 mt-6">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.Turpis
+                  ornare quis facilisis auctor eros. Mi felis in purus suscipit
+                  consequat tempor.
+                </p>
+                <div>
+                  <a href="#" class="re-btn text-[32px]">Pre-order game</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="topbg py-20 md:py-32">
+      <div class="container">
+        <div class="max-w-4xl ml-auto">
+          <div class="text-center">
+            <h2 class="heading1">Top 5 investors</h2>
+            <p class="text-[#B8B8BA] text-base">
+              The 5 biggest investors will get their own characters designed and
+              inplanted in to the game, we will create a realistic
+              <br />characters based on yourself and you will get to choose
+              design and the skill of the character if you wish.
+            </p>
+          </div>
+
+          <div class="top-investor-table mt-9 md:mt-14">
+            <div class="relative overflow-x-auto">
+              <table class="w-full text-center text-white md:text-xl">
+                <tbody>
+                  <tr>
+                    <th>
+                      <div class="flex gap-5 items-center">
+                        <img src="/assets/top-BvcuS8-h.png" alt="" />
+                        <span>#1</span>
+                      </div>
+                    </th>
+                    <td>x USD</td>
+                    <td>2024-05-07</td>
+                    <td>xfsde3eedsd1e12wdsadasd</td>
+                  </tr>
+                  <tr>
+                    <th>
+                      <div class="flex gap-5 items-center">
+                        <img src="/assets/top-BvcuS8-h.png" alt="" />
+                        <span>#2</span>
+                      </div>
+                    </th>
+                    <td>x USD</td>
+                    <td>2024-05-07</td>
+                    <td>xfsde3eedsd1e12wdsadasd</td>
+                  </tr>
+                  <tr>
+                    <th>
+                      <div class="flex gap-5 items-center">
+                        <img src="/assets/top-BvcuS8-h.png" alt="" />
+                        <span>#3</span>
+                      </div>
+                    </th>
+                    <td>x USD</td>
+                    <td>2024-05-07</td>
+                    <td>xfsde3eedsd1e12wdsadasd</td>
+                  </tr>
+                  <tr>
+                    <th>
+                      <div class="flex gap-5 items-center">
+                        <img src="/assets/top-BvcuS8-h.png" alt="" />
+                        <span>#4</span>
+                      </div>
+                    </th>
+                    <td>x USD</td>
+                    <td>2024-05-07</td>
+                    <td>xfsde3eedsd1e12wdsadasd</td>
+                  </tr>
+                  <tr>
+                    <th>
+                      <div class="flex gap-5 items-center">
+                        <img src="/assets/top-BvcuS8-h.png" alt="" />
+                        <span>#5</span>
+                      </div>
+                    </th>
+                    <td>x USD</td>
+                    <td>2024-05-07</td>
+                    <td>xfsde3eedsd1e12wdsadasd</td>
+                  </tr>
+                </tbody>
+                <tfoot class="">
+                  <tr>
+                    <th scope="col">Product name</th>
+                    <th scope="col">Color</th>
+                    <th scope="col">Category</th>
+                    <th scope="col">Price</th>
+                  </tr>
+                </tfoot>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="pt-10 pb-20 md:py-32">
+      <div class="container">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-5 items-center">
+          <div class="readybuy-left md:pr-11">
+            <h2 class="heading1 text-left">Ready to buy</h2>
+            <p class="mb-5">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Natoque
+              velit non sem elementum. Ipsum, laoreet ultrices egestas mi cras
+              sit magna egestas lectus. Phasellus semper aliquet leo, turpis
+              eleifend nunc volutpat.
+            </p>
+
+            <p>
+              Lobortis eros, turpis platea consequat. Aliquam dignissim amet
+              eget nam. Varius amet, in scelerisque turpis fames parturient
+              pellentesque. Lacus massa dignissim erat nisi curabitur tellus.
+              Netus odio id porttitor tempor risus in vivamus.
+            </p>
+
+            <div class="readybtn mt-12">
+              <div class="btn-all">
+                <a href="#" class="md:text-[32px] text-2xl text-offwhite"
+                  ><span class="absolute top-0 left-0"
+                    ><img src="data:image/svg+xml,%3csvg%20width='80'%20height='26'%20viewBox='0%200%2080%2026'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20filter='url(%23filter0_d_441_13)'%3e%3cpath%20d='M75%205.31592H11.9998L4.99977%2012.3159V20.8159'%20stroke='%23F4C625'%20stroke-linecap='square'/%3e%3c/g%3e%3cdefs%3e%3cfilter%20id='filter0_d_441_13'%20x='0.499771'%20y='0.815918'%20width='79.0002'%20height='24.5'%20filterUnits='userSpaceOnUse'%20color-interpolation-filters='sRGB'%3e%3cfeFlood%20flood-opacity='0'%20result='BackgroundImageFix'/%3e%3cfeColorMatrix%20in='SourceAlpha'%20type='matrix'%20values='0%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%20127%200'%20result='hardAlpha'/%3e%3cfeOffset/%3e%3cfeGaussianBlur%20stdDeviation='2'/%3e%3cfeColorMatrix%20type='matrix'%20values='0%200%200%200%201%200%200%200%200%200.797961%200%200%200%200%200.278431%200%200%200%200.4%200'/%3e%3cfeBlend%20mode='normal'%20in2='BackgroundImageFix'%20result='effect1_dropShadow_441_13'/%3e%3cfeBlend%20mode='normal'%20in='SourceGraphic'%20in2='effect1_dropShadow_441_13'%20result='shape'/%3e%3c/filter%3e%3c/defs%3e%3c/svg%3e" /></span
+                  >Ready to buy
+                  <span class="absolute bottom-0 right-0"
+                    ><img src="data:image/svg+xml,%3csvg%20width='117'%20height='33'%20viewBox='0%200%20117%2033'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20filter='url(%23filter0_d_441_14)'%3e%3cpath%20d='M112%205.31592V13.8159L97%2027.8159H5'%20stroke='%23F4C625'%20stroke-linecap='square'/%3e%3c/g%3e%3cdefs%3e%3cfilter%20id='filter0_d_441_14'%20x='0.5'%20y='0.815918'%20width='116'%20height='31.5'%20filterUnits='userSpaceOnUse'%20color-interpolation-filters='sRGB'%3e%3cfeFlood%20flood-opacity='0'%20result='BackgroundImageFix'/%3e%3cfeColorMatrix%20in='SourceAlpha'%20type='matrix'%20values='0%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%20127%200'%20result='hardAlpha'/%3e%3cfeOffset/%3e%3cfeGaussianBlur%20stdDeviation='2'/%3e%3cfeColorMatrix%20type='matrix'%20values='0%200%200%200%201%200%200%200%200%200.797961%200%200%200%200%200.278431%200%200%200%200.4%200'/%3e%3cfeBlend%20mode='normal'%20in2='BackgroundImageFix'%20result='effect1_dropShadow_441_14'/%3e%3cfeBlend%20mode='normal'%20in='SourceGraphic'%20in2='effect1_dropShadow_441_14'%20result='shape'/%3e%3c/filter%3e%3c/defs%3e%3c/svg%3e" /></span
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="roi-cal py-16 px-12">
+            <div class="max-w-md mx-auto">
+              <div class="mb-5 text-center">
+                <h3 class="font-title-font text-white text-2xl mb-1">
+                  ROI Calculator
+                </h3>
+                <p class="text-offwhite text-sm mb-0">
+                  You'll be directed to a secure checkout page where you can
+                  finalize<br class="hidden md:block" />your purchase using a
+                  variety of major cryptocurrencies.
+                </p>
+              </div>
+              <div class="calcu-col relative">
+                <div class="grid grid-cols-2 gap-5 items-center h-[100px]">
+                  <div class="text-center first-price1">
+                    <label class="text-offwhite text-base mb-1 block"
+                      >USD You Pay</label
+                    >
+                    <input
+                      type="text"
+                      placeholder="$0.00"
+                      class="text-2xl font-title-font text-white placeholder:text-gray-200"
+                    />
+                  </div>
+
+                  <div class="text-center">
+                    <label class="text-offwhite text-base mb-1 block"
+                      >PremiumTokens</label
+                    >
+                    <div class="">
+                      <div class="flex gap-2 justify-center text-center">
+                        <img src="/assets/Premiu-Tokens-Cubt7vh6.svg" alt="" />
+                        <span class="text-2xl font-title-font text-white"
+                          >3 Days</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <img src="data:image/svg+xml,%3csvg%20width='28'%20height='29'%20viewBox='0%200%2028%2029'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3crect%20x='1'%20y='1.39331'%20width='26'%20height='26'%20rx='13'%20fill='url(%23paint0_linear_1_399)'/%3e%3crect%20x='1'%20y='1.39331'%20width='26'%20height='26'%20rx='13'%20fill='%23838383'%20fill-opacity='0.1'/%3e%3crect%20x='1'%20y='1.39331'%20width='26'%20height='26'%20rx='13'%20fill='white'%20fill-opacity='0.1'/%3e%3crect%20x='1'%20y='1.39331'%20width='26'%20height='26'%20rx='13'%20stroke='%23151515'%20stroke-width='2'/%3e%3cpath%20d='M11%2020.3933L8%2017.3933M8%2017.3933L11%2014.3933M8%2017.3933H17M17%208.39331L20%2011.3933M20%2011.3933L17%2014.3933M20%2011.3933L11%2011.3933'%20stroke='white'%20stroke-width='1.5'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3cdefs%3e%3clinearGradient%20id='paint0_linear_1_399'%20x1='3.78571'%20y1='0.813311'%20x2='13.5738'%20y2='31.9796'%20gradientUnits='userSpaceOnUse'%3e%3cstop%20stop-color='%23FFC700'/%3e%3cstop%20offset='1'%20stop-color='%23FF8A00'/%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e" alt="" class="tokens" />
+              </div>
+
+              <div class="token-price mt-3">
+                <p class="text-sm text-offwhite m-0">
+                  And the token price reaches: $
+                  <span class="font-title-font text-gradient text-lg"
+                    >7,500,154</span
+                  >
+                </p>
+              </div>
+
+              <div class="range-slider">
+                <input
+                  id="default-range"
+                  type="range"
+                  min="1"
+                  max="100"
+                  step="1"
+                  value="15"
+                  class="w-full h-2 bg-[#373737] rounded-lg appearance-none cursor-pointer"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      (function () {
+        const second = 1000,
+          minute = second * 60,
+          hour = minute * 60,
+          day = hour * 24;
+
+        //I'm adding this section so I don't have to keep updating this pen every year :-)
+        //remove this if you don't need it
+        let today = new Date(),
+          dd = String(today.getDate()).padStart(2, "0"),
+          mm = String(today.getMonth() + 1).padStart(2, "0"),
+          yyyy = today.getFullYear(),
+          nextYear = yyyy + 1,
+          dayMonth = "07/10/",
+          birthday = dayMonth + yyyy;
+
+        today = mm + "/" + dd + "/" + yyyy;
+        if (today > birthday) {
+          birthday = dayMonth + nextYear;
+        }
+        //end
+
+        const countDown = new Date(birthday).getTime(),
+          x = setInterval(function () {
+            const now = new Date().getTime(),
+              distance = countDown - now;
+
+            (document.getElementById("days").innerText = Math.floor(
+              distance / day
+            )),
+              (document.getElementById("hours").innerText = Math.floor(
+                (distance % day) / hour
+              )),
+              (document.getElementById("minutes").innerText = Math.floor(
+                (distance % hour) / minute
+              )),
+              (document.getElementById("seconds").innerText = Math.floor(
+                (distance % minute) / second
+              ));
+
+            //do something later when date is reached
+            if (distance < 0) {
+              document.getElementById("headline").innerText =
+                "It's my birthday!";
+              document.getElementById("countdown").style.display = "none";
+              document.getElementById("content").style.display = "block";
+              clearInterval(x);
+            }
+            //seconds
+          }, 0);
+      })();
+    </script>
+  </body>
+</html>
